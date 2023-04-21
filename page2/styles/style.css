@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: rgba(229, 229, 229, 0.4352941176);
+}
+
+ul {
+  list-style: none;
+}
+
+/* header*/
+header {
+  background-image: url(../../image/page2/main_picture.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+header .wrapper__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3%;
+  align-items: center;
+}
+header .wrapper__header .menu__list {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  color: #ffffff;
+}
+header .wrapper__header .menu__list .menu__link-active {
+  color: #ffc700;
+}
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+header h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 5vw;
+  padding-left: 11%;
+  padding-bottom: 5%;
+}
+
+.wrapper {
+  display: grid;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* main part-1*/
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+}
+
+a:hover {
+  color: blue;
+}
+
+.online-shop__registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 11%;
+  margin-right: 11%;
+  border-radius: 10px;
+  background-color: white;
+}
+.online-shop__registration .online-shop__registration-transport {
+  margin-top: 5%;
+}
+.online-shop__registration .online-shop__registration-transport .online-shop__registration-transport .tranport {
+  padding-right: 4px;
+}
+.online-shop__registration .form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  padding-top: 5%;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.online-shop__registration .form .online-shop__registration-cities {
+  border: white;
+  width: 15vw;
+  height: 7vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-image: url(../../image/page2/icon_map.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  margin-bottom: 8%;
+}
+.online-shop__registration .online-shop__registration-date {
+  border: white;
+  width: 15vw;
+  height: 7vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-image: url(../../image/page2/icon_calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  margin-bottom: 8%;
+}
+.online-shop__registration .online-shop__registration-number {
+  border: white;
+  width: 15vw;
+  height: 7vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-image: url(../../image/page2/icon_team.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  margin-bottom: 8%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select option {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+button {
+  width: 15vw;
+  height: 7vh;
+  background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+  border-radius: 10px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  border: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* main part-2*/
+.all-tours {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-top: 4%;
+}
+.all-tours .all-tours__filters {
+  width: 23vw;
+  background-color: white;
+  border-radius: 10px;
+}
+.all-tours .online-shop__tours {
+  width: 52vw;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* footer*/
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+  height: 173px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+}
+.footer .wrapper__footer {
+  grid-template-columns: 80px 1fr 176px;
+  grid-template-rows: 55px 55px;
+  grid-template-areas: "footer-logo footer-menu-contacts footer-mail" "footer-logo footer-menu-contacts footer-app";
+  align-items: center;
+}
+.footer .wrapper__footer .footer__logo {
+  grid-area: footer-logo;
+}
+.footer .wrapper__footer .footer__menu-contacts {
+  grid-area: footer-menu-contacts;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .wrapper__footer .footer__menu {
+  padding-left: 12%;
+}
+.footer .wrapper__footer .footer__menu .footer__menu-list {
+  display: grid;
+  row-gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+.footer .wrapper__footer .footer__contacts {
+  display: grid;
+  padding-right: 12%;
+  row-gap: 4px;
+}
+.footer .wrapper__footer .footer__contacts .footer__contacts-whatsapp {
+  background: url(../../image/header_footer/icon_whatsapp_footer.svg) no-repeat;
+  background-position: center left;
+  padding: 2px 0 2px 30px;
+}
+.footer .wrapper__footer .footer__contacts .footer__contacts-telegram {
+  background: url(../../image/header_footer/icon_telegram_footer.svg) no-repeat;
+  background-position: center left;
+  padding: 2px 0 2px 30px;
+}
+.footer .wrapper__footer .footer__mail {
+  text-align: bottom;
+  grid-area: footer-mail;
+}
+.footer .wrapper__footer .footer__mail .footer__mail-ico {
+  background: url(../../image/header_footer/icon_telegram_footer.svg) no-repeat;
+  padding-left: 30px;
+  background-position: center left;
+}
+.footer .wrapper__footer .footer__app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: footer-app;
+  max-width: 112px;
+  margin-top: -15px;
+}/*# sourceMappingURL=style.css.map */

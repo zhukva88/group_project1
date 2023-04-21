@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;600&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -22,12 +23,12 @@ html {
 grand-wrapper {
   max-width: 1920px;
   font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 header {
-  background: url(../image/page3/header_pic.jpg) no-repeat center/cover;
+  background: url(../../image/page3/header_pic.jpg) no-repeat center/cover;
   display: flex;
   justify-content: center;
   color: #FFFFFF;
@@ -148,6 +149,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 /*Container 2*/
@@ -743,8 +751,12 @@ select {
 input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
+select{
+  appearance: none;
+  overflow: hidden;
+}
 
-.container {
+.container-seven {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -752,7 +764,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .section-seven {
   max-width: 1920px;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 .container-seven {
@@ -762,7 +773,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 17px;
   margin: 0 auto;
   color: #282828;
-  border: 2px solid red;
 }
 
 .container-seven__gallery-h2,
@@ -770,8 +780,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .container-seven__booking-h2 {
   font-size: 1.5em;
   font-weight: 700;
+  margin-bottom: 90px;
   color: #0499DD;
-  border: 2px solid blue;
 }
 
 .container-seven__gallery-link,
@@ -965,12 +975,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .container-seven__booking-btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .container-seven__booking-btn__btn {
   text-align: center;
-  width: 13vw;
+  width: 13.33vw;
   font-size: 0.875em;
   font-weight: 700;
   color: #fff;
@@ -982,5 +992,92 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .container-seven__booking-btn__icon {
   max-width: 30px;
+  width: 100%;
   max-height: 30px;
+  height: 100%;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+  min-height: 173px;
+  font-weight: 500;
+  color: #282828;
+}
+.footer .footer__wrapper {
+  display: grid;
+  grid-template-columns: 80px 1fr 12em;
+  grid-template-rows: 55px 55px;
+  grid-template-areas: "footer-logo footer-menu-contacts footer-mail" "footer-logo footer-menu-contacts footer-app";
+  align-items: center;
+}
+.footer .footer__logo {
+  grid-area: footer-logo;
+}
+.footer .footer__menu-contacts {
+  grid-area: footer-menu-contacts;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  padding-left: 12%;
+}
+
+.footer__menu .footer__menu-list {
+  display: grid;
+  row-gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__contacts {
+  display: grid;
+  padding-right: 12%;
+  row-gap: 4px;
+}
+.footer__contacts .footer__contacts-whatsapp {
+  background: url(../../image/header_footer/icon_whatsapp_footer.svg) no-repeat;
+  background-position: center left;
+  padding: 2px 0 2px 30px;
+}
+.footer__contacts .footer__contacts-telegram {
+  background: url(../../image/header_footer/icon_telegram_footer.svg) no-repeat;
+  background-position: center left;
+  padding: 2px 0 2px 30px;
+}
+
+.footer__mail {
+  text-align: bottom;
+  grid-area: footer-mail;
+}
+.footer__mail .footer__mail-ico {
+  background: url(../../image/header_footer/icon_mail_footer.svg) no-repeat;
+  padding-left: 30px;
+  background-position: center left;
+}
+
+.footer__app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: footer-app;
+  max-width: 112px;
+  align-self: baseline;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
