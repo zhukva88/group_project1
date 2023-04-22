@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+  /*Container 1*/
+  .container {
+    background-color: red;
+  }
+  .container__nav {
+    display: none;
+  }
+}/*# sourceMappingURL=media.css.map */
