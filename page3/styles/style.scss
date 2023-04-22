@@ -534,7 +534,8 @@ header {
 
         .route__item-two,
         .route__item-three,
-        .route__item-six {
+        .route__item-six,
+        .route__item_text {
             margin-top: 21px;
         }
 
@@ -544,11 +545,8 @@ header {
         }
     }
 
-    .slider {
+    .slider1 {
         display: flex;
-        justify-content: center;
-        max-width: 1050px;
-        width: 100%;
     }
 }
 
