@@ -10,8 +10,6 @@ html {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;600&display=swap');
 
-@import url(../../page3/styles/media.scss);
-
 $font: 'Montserrat', sans-serif;
 $color_header: #FFFFFF;
 
@@ -51,23 +49,23 @@ header {
         min-height: 670px;
         width: 100%;
 
-        .container__nav {
+        .navigation {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 26px 0 0 0;
 
-            .container__nav-menu {
+            .navigation__menu {
                 display: flex;
                 justify-content: space-between;
                 list-style: none;
                 padding: 0;
 
-                .container__nav-menu_item {
+                .navigation__menu-item {
                     margin-right: 30px;
                 }
 
-                .container__nav-menu_item--active {
+                .navigation__menu-item_active {
                     color: #FFC700;
                     margin-right: 30px;
                 }
@@ -121,20 +119,23 @@ header {
             }
         }
 
-        .container__title {
-            .container__title_p {
-                margin: 128px 0 0 0;
+        .title {
+            padding-top: 128px;
+
+            .title__p {
                 @extend %font_700;
                 font-size: 29px;
                 line-height: 32px;
                 color: #FFC700;
+                margin: 0;
             }
 
-            .container__title_h1 {
+            .title__h1 {
                 @extend %font_700;
                 font-size: 48px;
                 line-height: 59px;
-                margin: 10px 0 0 0;
+                margin: 0;
+                padding-top: 10px;
                 text-transform: uppercase;
             }
         }
@@ -1153,4 +1154,41 @@ select {
     grid-area: footer-app;
     max-width: 112px;
     align-self: baseline;
+}
+
+@media screen and (min-width: 769px) {
+    .burger-wrapper {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .grand-wrapper {
+        width: 768px;
+    }
+
+    .container {
+        background-color: #7F00FF;
+        height: 1024px;
+
+        .menu-wrapper {
+            display: none;
+        }
+    }
+
+    .title {
+        padding: 303px 0 0 79px;
+        margin-right: 79px;
+
+        .title__p {
+            font-size: 22px;
+            line-height: 79px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+    }
 }

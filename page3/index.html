@@ -8,8 +8,8 @@
       src="https://kit.fontawesome.com/e2ab0a7305.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../page3/styles/media.css">
     <link rel="stylesheet" href="../page3/styles/style.css">
+    <link rel="stylesheet" href="../page3/normalize.css">
     <title>Обзор экскурсии</title>
   </head>
 
@@ -17,37 +17,39 @@
     <div class="grand-wrapper">
       <header class="header">
         <div class="container">
-          <nav class="container__nav">
-            <div class="container__nav-logo">
+          <nav class="navigation">
+            <div class="navigation__logo">
               <a href="#">
                 <img src="../image/page3/header-logo.svg" alt="Logo"
               /></a>
             </div>
 
-            <ul class="container__nav-menu">
-              <li><a href="#" class="container__nav-menu_item">Главная</a></li>
+            <div class="menu-wrapper">
+              <ul class="navigation__menu">
+                <li><a href="#" class="navigation__menu-item">Главная</a></li>
 
-              <li>
-                <a href="#" class="container__nav-menu_item--active"
-                  >Экскурсии</a
-                >
-              </li>
+                <li>
+                  <a href="#" class="navigation__menu-item_active"
+                    >Экскурсии</a
+                  >
+                </li>
 
-              <li><a href="#">Личный кабинет</a></li>
-            </ul>
+                <li><a href="#">Личный кабинет</a></li>
+              </ul>
+            </div>
 
-            <button class="burger">
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-              <span class="burger__line last-line"></span>
-            </button>
-
-
+            <div class="burger-wrapper">
+              <button class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line last-line"></span>
+              </button>
+            </div>
           </nav>
 
-          <div class="container__title">
-            <p class="container__title_p">Автобусный тур</p>
-            <h1 class="container__title_h1">
+          <div class="title">
+            <p class="title__p">Автобусный тур</p>
+            <h1 class="title__h1">
               Золотое кольцо Абхазии <br />(из Адлера)
             </h1>
           </div>

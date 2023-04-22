@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;600&display=swap");
-@import url(../../page3/styles/media.scss);
 html {
   box-sizing: border-box;
 }
@@ -10,12 +9,12 @@ html {
   box-sizing: inherit;
 }
 
-.container-six .container-six__info .container-six__info-wrapper_two .container-six__info-plus .container-six__info-plus_text .container-six__info-plus_text_p, .container-six .container-six__info .container-six__info-wrapper .container-six__info-doc .container-six__info-doc_text .container-six__info-doc_text_p_two, .container-six .container-six__info .container-six__info-wrapper .container-six__info-boarder .container-six__info-boarder_p, .container-five .container-five__info .container-five__info-wrap .expenses .expenses__info .expenses-info-wrap .expenses-info-main .expenses__details_text2 .expenses__details_text2-style, .container-four .route .route__item .route__item_text, .container-three .planing .planing__calendar .planing__calendar-wrapper .calendar .dates button .dates__time, .container-three .planing .planing__calendar .planing__calendar-wrapper .calendar .dates button .dates__day, .container-two .action .action-wrapper .action__main .action__main-info .action__main-info-wrap .action-details .action-details__text-two .action-details__text-two_style, .container-two .description .description__text-style, header .container .container__nav .container__nav-menu a {
+.container-six .container-six__info .container-six__info-wrapper_two .container-six__info-plus .container-six__info-plus_text .container-six__info-plus_text_p, .container-six .container-six__info .container-six__info-wrapper .container-six__info-doc .container-six__info-doc_text .container-six__info-doc_text_p_two, .container-six .container-six__info .container-six__info-wrapper .container-six__info-boarder .container-six__info-boarder_p, .container-five .container-five__info .container-five__info-wrap .expenses .expenses__info .expenses-info-wrap .expenses-info-main .expenses__details_text2 .expenses__details_text2-style, .container-four .route .route__item .route__item_text, .container-three .planing .planing__calendar .planing__calendar-wrapper .calendar .dates button .dates__time, .container-three .planing .planing__calendar .planing__calendar-wrapper .calendar .dates button .dates__day, .container-two .action .action-wrapper .action__main .action__main-info .action__main-info-wrap .action-details .action-details__text-two .action-details__text-two_style, .container-two .description .description__text-style, header .container .navigation .navigation__menu a {
   font-style: normal;
   font-weight: 500;
 }
 
-.container-six .container-six__info .container-six__info-wrapper .container-six__info-doc .container-six__info-doc_text .container-six__info-doc_text_p, .container-six .container-six__title .container-six__title-p, .container-five .container-five__info .container-five__info-wrap .expenses .expenses__info .expenses-info-wrap .expenses-info-main .expenses__details .expenses__details_text-style, .container-five .container-five__title .container-five__title-style, .container-four .route .route__item .route__item_text .item-style-four, .container-four .route .route__title .route__title_style, .container-three .planing .planing__calendar .planing__calendar-wrapper .calendar .days .days-style, .container-three .planing .planing__calendar .planing__calendar-wrapper .calendar .month, .container-three .planing .planing__title .planing__title-style, .container-two .action .action-wrapper .action__main .action__main-info .action__main-info-wrap .action-details .action-details-wrap .action-details__text_style, .container-two .description .description__title, header .container .container__btn .container__btn-wrapper .container__btn-one .container__btn-one_wrapper .container__btn-one_wrapper_text, header .container .container__title .container__title_h1, header .container .container__title .container__title_p {
+.container-six .container-six__info .container-six__info-wrapper .container-six__info-doc .container-six__info-doc_text .container-six__info-doc_text_p, .container-six .container-six__title .container-six__title-p, .container-five .container-five__info .container-five__info-wrap .expenses .expenses__info .expenses-info-wrap .expenses-info-main .expenses__details .expenses__details_text-style, .container-five .container-five__title .container-five__title-style, .container-four .route .route__item .route__item_text .item-style-four, .container-four .route .route__title .route__title_style, .container-three .planing .planing__calendar .planing__calendar-wrapper .calendar .days .days-style, .container-three .planing .planing__calendar .planing__calendar-wrapper .calendar .month, .container-three .planing .planing__title .planing__title-style, .container-two .action .action-wrapper .action__main .action__main-info .action__main-info-wrap .action-details .action-details-wrap .action-details__text_style, .container-two .description .description__title, header .container .container__btn .container__btn-wrapper .container__btn-one .container__btn-one_wrapper .container__btn-one_wrapper_text, header .container .title .title__h1, header .container .title .title__p {
   font-style: normal;
   font-weight: 700;
 }
@@ -45,36 +44,36 @@ header .container {
   min-height: 670px;
   width: 100%;
 }
-header .container .container__nav {
+header .container .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 26px 0 0 0;
 }
-header .container .container__nav .container__nav-menu {
+header .container .navigation .navigation__menu {
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 0;
 }
-header .container .container__nav .container__nav-menu .container__nav-menu_item {
+header .container .navigation .navigation__menu .navigation__menu-item {
   margin-right: 30px;
 }
-header .container .container__nav .container__nav-menu .container__nav-menu_item--active {
+header .container .navigation .navigation__menu .navigation__menu-item_active {
   color: #FFC700;
   margin-right: 30px;
 }
-header .container .container__nav .container__nav-menu a {
+header .container .navigation .navigation__menu a {
   font-size: 22px;
   line-height: 22px;
   text-decoration: none;
   color: #FFFFFF;
 }
-header .container .container__nav .container__nav-menu a:hover {
+header .container .navigation .navigation__menu a:hover {
   color: #FF3399;
   transition: 0.2s;
 }
-header .container .container__nav .burger {
+header .container .navigation .burger {
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -85,34 +84,38 @@ header .container .container__nav .burger {
   justify-content: center;
   align-items: center;
 }
-header .container .container__nav .burger .burger__line {
+header .container .navigation .burger .burger__line {
   display: block;
   background-color: #FFFFFF;
   width: 40px;
   height: 3px;
   margin-bottom: 8px;
 }
-header .container .container__nav .burger .burger__line:hover {
+header .container .navigation .burger .burger__line:hover {
   background-color: #000000;
   transition: 0.2s;
 }
-header .container .container__nav .burger .last-line {
+header .container .navigation .burger .last-line {
   margin-bottom: 0;
 }
-header .container .container__nav .burger:hover {
+header .container .navigation .burger:hover {
   background-color: #FF3399;
   transition: 0.2s;
 }
-header .container .container__title .container__title_p {
-  margin: 128px 0 0 0;
+header .container .title {
+  padding-top: 128px;
+}
+header .container .title .title__p {
   font-size: 29px;
   line-height: 32px;
   color: #FFC700;
+  margin: 0;
 }
-header .container .container__title .container__title_h1 {
+header .container .title .title__h1 {
   font-size: 48px;
   line-height: 59px;
-  margin: 10px 0 0 0;
+  margin: 0;
+  padding-top: 10px;
   text-transform: uppercase;
 }
 header .container .container__btn {
@@ -1003,4 +1006,34 @@ select {
   grid-area: footer-app;
   max-width: 112px;
   align-self: baseline;
+}
+
+@media screen and (min-width: 769px) {
+  .burger-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grand-wrapper {
+    width: 768px;
+  }
+  .container {
+    background-color: #7F00FF;
+    height: 1024px;
+  }
+  .container .menu-wrapper {
+    display: none;
+  }
+  .title {
+    padding: 303px 0 0 79px;
+    margin-right: 79px;
+  }
+  .title .title__p {
+    font-size: 22px;
+    line-height: 79px;
+    margin: 0;
+  }
+  .title h1 {
+    font-size: 36px;
+  }
 }/*# sourceMappingURL=style.css.map */
