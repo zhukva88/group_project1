@@ -506,9 +506,10 @@ header .container .btn .btn-two__wrapper .btn-two__icon .btn-two__icon-pic:hover
   color: #0499DD;
 }
 .container-five .container-five__info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 15% 18% 21% 21% 15%;
+  grid-template-rows: 1 fr;
   justify-content: space-between;
-  min-height: 230px;
 }
 .container-five .container-five__info .container-five__info-wrap {
   max-width: 250px;
@@ -1146,6 +1147,13 @@ select {
   }
   .container-four .route__image {
     width: 610px;
+  }
+  /*Container 5*/
+  .container-five .container-five__info {
+    display: grid;
+    grid-template-columns: 15% 18% 21%;
+    grid-template-rows: 1fr 1fr;
+    background-color: #17C1BC;
   }
   /*Container 6*/
   .container-six {
