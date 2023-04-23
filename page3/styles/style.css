@@ -1151,9 +1151,13 @@ select {
   /*Container 5*/
   .container-five {
     width: 786px;
+    margin-top: 150px;
   }
   .container-five .container-five__title .container-five__title-style {
     padding-left: 79px;
+    font-family: "Montserrat";
+    font-size: 24px;
+    line-height: 29px;
   }
   .container-five .container-five__info {
     display: grid;
@@ -1215,8 +1219,10 @@ select {
   }
   .section-seven .container-seven .container-seven__gallery {
     width: 768px;
-    margin: 0;
-    margin-top: 150px;
+    margin: 150px 0 0 0;
+  }
+  .section-seven .container-seven .container-seven__gallery-title {
+    margin-bottom: 0;
   }
   .section-seven .container-seven .container-seven__gallery .container-seven__gallery-h2 {
     margin: 0;
@@ -1227,7 +1233,7 @@ select {
     box-sizing: border-box;
     width: 768px;
     width: 100%;
-    height: 567px;
+    height: 650px;
     padding-top: 90px;
   }
   .section-seven .container-seven .container-seven__gallery .container-seven__grid .container-seven__grid--item-1 {
@@ -1267,10 +1273,25 @@ select {
     grid-row-end: 5;
   }
   /*Feedback*/
+  .container-seven__feedback .container-seven__feedback-title {
+    margin: 0;
+    padding: 0;
+  }
   .container-seven__feedback .container-seven__feedback-info,
   .container-seven__feedback .container-seven__feedback-info--first {
     height: 246px;
-    width: 610px;
+    width: 700px;
+    padding: 0;
+  }
+  .container-seven .container-seven__feedback .container-seven__feedback-info--first {
+    max-width: 700px;
+  }
+  .container-seven__feedback .container-seven__feedback-info .container-seven__feedback-img--first .container-seven__feedback-img {
+    margin: 0;
+  }
+  .container-seven .container-seven__feedback .container-seven__feedback-info .container-seven__feedback-info--first .container-seven__feedback-text {
+    margin: 0;
+    padding-left: 5px;
   }
   .container-seven__feedback .container-seven__feedback-info .container-seven__feedback-info--second {
     display: none;
@@ -1278,5 +1299,48 @@ select {
   /*Booking*/
   .container-seven__booking .container-seven__booking-img {
     display: none;
+  }
+  .container-seven__booking-box {
+    margin: 0;
+    padding-left: 79px;
+    max-width: 610px;
+  }
+  .container-seven__booking-box .container-seven__booking-btn .container-seven__booking-btn__btn {
+    max-width: 210px;
+    width: 100%;
+  }
+  /*Footer*/
+  .footer {
+    margin-top: 51px;
+  }
+  .footer .footer__wrapper {
+    max-width: 610px;
+    width: 100%;
+  }
+  .footer .footer__wrapper .footer__contacts-one {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer .footer__wrapper .footer__contacts-one .footer__logo {
+    margin-right: 42px;
+  }
+  .footer .footer__wrapper .footer__contacts-one .footer__menu .footer__menu-link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .footer .footer__contacts-two {
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer .footer__contacts-two .footer__sns {
+    font-size: 12px;
+    line-height: 15px;
+    justify-content: center;
+    max-width: 200px;
+    width: 100%;
+  }
+  .footer .footer__contacts-two .footer__message .footer__mail .footer__mail-ico {
+    font-size: 12px;
+    line-height: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
